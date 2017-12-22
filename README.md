@@ -518,7 +518,7 @@ Create an order for the specified trading pair.
 _Create an order to sell 5 GAS for NEO at the specified price:_
 
 ```javascript
-kc.createWithdrawal({
+kc.createOrder({
   pair: 'GAS-NEO',
   amount: 5,
   price: 0.608004
@@ -577,7 +577,7 @@ Cancel an order for the specified trading pair.
 
 **Parameters**
 
--   `params` **{pair: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), txOid: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)}** Order details including the trading pair and transaction ID for the order. (optional, default `{}`)
+-   `params` **{pair: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), orderOid: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String),}** Order details including the trading pair, transaction ID for the order and type. (optional, default `{}`)
 
 **Examples**
 
